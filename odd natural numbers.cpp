@@ -1,15 +1,12 @@
 #include <stdio.h>
-
 int main() {
-    int N;
-    scanf("%d", &N);
-
-    for (int i = 1; i <= N; i += 2) {  // Start from 1 and increment by 2
-        printf("%d ", i);
+    int n, a = 0, b = 1, c;
+    scanf("%d", &n);
+    for(int i = 1; i <= n; i++) {
+        printf("%d ", a);
+        c = a + b;
+        a = b;
+        b = c;
     }
-    printf("
-");
-
     return 0;
 }
-
